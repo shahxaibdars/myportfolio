@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<title>My Portfolio</title><link rel="icon" type="image/x-icon" href="content/images/icon/icon1.svg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="content/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="sidebar bar-block small hide-small center">
+  <!-- Avatar image in top left corner -->
+  <img src="content/images/important/mypic.jpg" style="width:100%">
+  <a href="#" class="bar-item button padding-large black">
+    <i class="fa fa-home xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="bar-item button padding-large hover-black">
+    <i class="fa fa-user xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#photos" class="bar-item button padding-large hover-black">
+    <i class="fa fa-eye xxlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+  <a href="#contact" class="bar-item button padding-large hover-black">
+    <i class="fa fa-envelope xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="top hide-large hide-medium" id="myNavbar">
+  <div class="bar black opacity hover-opacity-off center small">
+    <a href="#" class="bar-item button" style="width:25% !important">HOME</a>
+    <a href="#about" class="bar-item button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="bar-item button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="bar-item button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="container padding-32 center black" id="home">
+    <h1 class="jumbo"><span class="hide-small">I'm</span> Shahzaib Dars.</h1>
+    <p>UG Student and Novice Photographer.</p>
+    <img src="content/images/important/mypic.jpg" alt="boy" class="image" width="992" height="1108">
+  </header>
+
+  <!-- About Section -->
+  <div class="content justify text-grey padding-64" id="about">
+    <h2 class="text-light-grey">About Me</h2>
+    <hr style="width:200px" class="opacity">
+    <p>My name is Shahzaib Dars. I am 20 years old and studying  at FAST National University Islamabad. 
+      I am a self-driven and a self-motivated student currently pursuing my bachelor's degree in Computer Science.
+    </p>
+    <h3 class="padding-16 text-light-grey">My Skills</h3>
+    <p class="wide">Photography</p>
+    <div class="white">
+      <div class="dark-grey" style="height:28px;width:60%"></div>
+    </div>
+    <p class="wide">Visual Basic</p>
+    <div class="white">
+      <div class="dark-grey" style="height:28px;width:60%"></div>
+    </div>
+    <p class="wide">C++</p>
+    <div class="white">
+      <div class="dark-grey" style="height:28px;width:40%"></div>
+    </div>
+    <p class="wide">Python</p>
+    <div class="white">
+      <div class="dark-grey" style="height:28px;width:25%"></div>
+    </div><br>
+
+    <button class="button light-grey padding-large section">
+      <a href="content/resume.html" target="_blank"><i class="fa fa-file"></i> See Resume</a>
+    </button>
+  <!-- End About Section -->
+  </div>
+  
+  <!-- Portfolio Section -->
+  <div class="padding-64 content" id="photos">
+    <h2 class="text-light-grey">My Photos</h2>
+    <hr style="width:200px" class="opacity">
+
+    <!-- Grid for photos -->
+    <div class="row-padding" style="margin:0 -16px">
+      <div class="half">
+        <img src="content/images/photography/1.jpeg" style="width:100%">
+        <img src="content/images/photography/2.jpeg" style="width:100%">
+        <img src="content/images/photography/3.jpg" style="width:100%">
+        <img src="content/images/photography/4.jpeg" style="width:100%">
+        <img src="content/images/photography/5.jpg" style="width:100%">
+        <img src="content/images/photography/6.jpg" style="width:100%">
+        <img src="content/images/photography/8.jpeg" style="width:100%">
+      </div>
+
+      <div class="half">
+        <img src="content/images/photography/9.jpeg" style="width:100%">
+        <img src="content/images/photography/10.jpeg" style="width:100%">
+        <img src="content/images/photography/11.jpg" style="width:100%">
+        <img src="content/images/photography/12.jpeg" style="width:100%">
+        <img src="content/images/photography/13.jpg" style="width:100%">
+        <img src="content/images/photography/14.jpg" style="width:100%"> 
+        <img src="content/images/photography/16.jpeg" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="padding-64 content text-grey" id="contact">
+    <h2 class="text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="opacity">
+
+    <div class="section">
+      <p><i class="fa fa-envelope fa-fw text-white xxlarge margin-right"> </i> Email: i221327@nu.edu.pk</p>
+      <p><i class="fa fa-phone fa-fw text-white xxlarge margin-right"></i> Phone: -- </p>
+      <p><i class="fa fa-map-marker fa-fw text-white xxlarge margin-right"></i> Islamabad, PK</p>
+    </div>
+    <img src="content/images/important/isl.jpg" style="width:100%">
+    <br>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="content padding-64 text-grey xlarge center">
+    <p><b>Find me on social media.</b></p>
+    <a href="https://www.facebook.com/shahxaibdars/" target="_blank"><i class="fa fa-facebook-official hover-opacity"></i></a>
+    <a href="https://www.instagram.com/shahxaibdars/" target="_blank"><i class="fa fa-instagram hover-opacity"></i></a>
+    <a href="https://www.snapchat.com/add/shahxaibdars?share_id=2adHsCZT3bQ&locale=en-US" target="_blank"><i class="fa fa-snapchat hover-opacity"></i></a>
+    <br>
+    <b>Copyright </b><p  class="fa fa-copyright xlarge"></p> <b>2022,Shahzaib Dars.All Rights Reserved</b>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
